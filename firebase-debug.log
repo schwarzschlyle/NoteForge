@@ -1,0 +1,129 @@
+[debug] [2023-10-22T09:21:15.771Z] ----------------------------------------------------------------------
+[debug] [2023-10-22T09:21:15.773Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-22T09:21:15.773Z] CLI Version:   12.3.1
+[debug] [2023-10-22T09:21:15.774Z] Platform:      win32
+[debug] [2023-10-22T09:21:15.774Z] Node Version:  v18.18.2
+[debug] [2023-10-22T09:21:15.775Z] Time:          Sun Oct 22 2023 17:21:15 GMT+0800 (Singapore Standard Time)
+[debug] [2023-10-22T09:21:15.775Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-22T09:21:15.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-22T09:21:15.784Z] > authorizing via signed-in user (lylekeng@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lyle\Desktop\noteforge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-10-22T09:21:28.892Z] > refreshing access token with scopes: []
+[debug] [2023-10-22T09:21:28.894Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-10-22T09:21:28.894Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-22T09:21:29.083Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-10-22T09:21:29.083Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-10-22T09:21:29.097Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-10-22T09:21:29.098Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"audio-to-text","name":"audio-to-text"}
+[debug] [2023-10-22T09:21:30.142Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-10-22T09:21:30.143Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-10-22T09:21:30.336Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID audio-to-text. Please try again with a unique project ID.
+[debug] [2023-10-22T09:21:50.495Z] ----------------------------------------------------------------------
+[debug] [2023-10-22T09:21:50.498Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-22T09:21:50.498Z] CLI Version:   12.3.1
+[debug] [2023-10-22T09:21:50.499Z] Platform:      win32
+[debug] [2023-10-22T09:21:50.499Z] Node Version:  v18.18.2
+[debug] [2023-10-22T09:21:50.500Z] Time:          Sun Oct 22 2023 17:21:50 GMT+0800 (Singapore Standard Time)
+[debug] [2023-10-22T09:21:50.500Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-22T09:21:50.510Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-22T09:21:50.511Z] > authorizing via signed-in user (lylekeng@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lyle\Desktop\noteforge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-10-22T09:22:02.521Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-10-22T09:22:02.521Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"audio-to-text-sample","name":"audio-to-text-sample"}
+[debug] [2023-10-22T09:22:03.610Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-10-22T09:22:03.610Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-10-22T09:22:03.777Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID audio-to-text-sample. Please try again with a unique project ID.
+[debug] [2023-10-22T09:22:09.133Z] ----------------------------------------------------------------------
+[debug] [2023-10-22T09:22:09.135Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-22T09:22:09.136Z] CLI Version:   12.3.1
+[debug] [2023-10-22T09:22:09.136Z] Platform:      win32
+[debug] [2023-10-22T09:22:09.136Z] Node Version:  v18.18.2
+[debug] [2023-10-22T09:22:09.137Z] Time:          Sun Oct 22 2023 17:22:09 GMT+0800 (Singapore Standard Time)
+[debug] [2023-10-22T09:22:09.138Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-22T09:22:09.147Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-22T09:22:09.148Z] > authorizing via signed-in user (lylekeng@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lyle\Desktop\noteforge
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-10-22T09:22:23.631Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-10-22T09:22:23.632Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sample-audio2text-lyle","name":"sample-audio2text-lyle"}
+[debug] [2023-10-22T09:22:25.157Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-10-22T09:22:25.157Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5172018995743807993"}
+[debug] [2023-10-22T09:22:25.159Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5172018995743807993 [none]
+[debug] [2023-10-22T09:22:26.421Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5172018995743807993 200
+[debug] [2023-10-22T09:22:26.421Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5172018995743807993 {"name":"operations/cp.5172018995743807993","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-10-22T09:22:26.620Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\Lyle\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
